@@ -15,9 +15,11 @@ Kamakura food started as a project for my coders to whom I teach and ended up be
 It is a simple design made while developing.
 
 ## Technologies
+
 It was developed with javascript vanilla, without architecture, funcional programming and tested with vitest and jsdom.
 
 ## Installation
+
 - Node v18.15.0
 - Vitest v0.34.6
 - Jsdom v22.1.0
@@ -26,6 +28,11 @@ It was developed with javascript vanilla, without architecture, funcional progra
 - npm test
 - Open index.html with live server
 
-## Resultado esperado
+## Result
 
 This is a video for the result
+
+https://github.com/MAlexGG/kamakura-food/assets/73828751/ea051eb6-105f-46f3-9b61-747e2c5d0030
+
+
+
