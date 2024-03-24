@@ -1,25 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
-@import './cart.css';
-:root {
-    --font-main: 'PT Sans', sans-serif;
-    --color-main: #fc3232;
-    --color-light: #ffecdb;
-}
-
-* {
-    font-family: var(--font-main);
-}
-
-p {
-    margin: 0px;
-}
-
-h5,
-h3,
-input {
-    margin: 0;
-}
-
 .container {
     display: flex;
     flex-direction: column;

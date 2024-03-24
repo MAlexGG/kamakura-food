@@ -60,7 +60,7 @@ function closeProducts(){
 function openReceipt(){
     const cart = document.getElementById("receipt-container");
     cart.style.display = "flex";
-    printReceipt(cartList)
+    printReceipt(cartList);
 }
 
 function closeReceipt(){
@@ -70,10 +70,10 @@ function closeReceipt(){
     cart.style.display = "flex";
 }
 
-function pay(){
-    closeProducts()
-    openReceipt()
-    printTotal(cartList, "receipt-total")
+function getReceipt(){
+    closeProducts();
+    openReceipt();
+    printTotal(cartList, "receipt-total");
 }
 
 function addQuantity(id){  
@@ -82,7 +82,7 @@ function addQuantity(id){
             item.quantity ++;
         }
     }
-    printCart(cartList)
+    printCart(cartList);
 }
 
 function substractQuantity(id){  
@@ -94,7 +94,7 @@ function substractQuantity(id){
             deleteCartProduct(id)
         }
     }
-    printCart(cartList)
+    printCart(cartList);
 }
 
 function getTotal(order){
@@ -111,4 +111,15 @@ function printTotal(order, elementId){
     totalContainer.innerText = `Total ${total.toFixed(2)} €`;
 }
 
-export {toggleCart, deleteCartProduct, addProduct, getProduct, printCart, pay, closeReceipt, addQuantity, substractQuantity, getTotal, printTotal}
+function emptyCart(){
+    cartList = [];
+}
+
+function cleanOrder(){
+    const orderProducts = document.getElementById("cart-products");
+    orderProducts.style.display = "none";
+    const totalContainer = document.getElementById("cart-total");
+    totalContainer.innerText = "Total 0.00 €";
+}
+
+export {toggleCart, deleteCartProduct, addProduct, getProduct, printCart, getReceipt, closeReceipt, addQuantity, substractQuantity, getTotal, printTotal, emptyCart, cleanOrder}
