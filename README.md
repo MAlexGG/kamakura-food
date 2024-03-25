@@ -32,7 +32,9 @@ It was developed with javascript vanilla, without architecture, funcional progra
 
 This is a video for the result
 
-https://github.com/MAlexGG/kamakura-food/assets/73828751/ea051eb6-105f-46f3-9b61-747e2c5d0030
+https://github.com/MAlexGG/kamakura-food/assets/73828751/df0e5031-9b1b-422d-a958-06219e0bf535
+
+
 
 
 
