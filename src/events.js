@@ -1,7 +1,7 @@
 //Intenta separar los eventos en este archivo.
 
 import { filters, products } from "../assets/data/data.js";
-import { closeReceipt, getReceipt, toggleCart} from "./cart.js";
+import { cartList, closeReceipt, getReceipt, toggleCart} from "./cart.js";
 import { printFilters, printMenu } from "./menu.js";
 import { payClose, payOpen } from "./receipt.js";
 import { searcher } from "./searcher.js";
@@ -28,7 +28,9 @@ const closeReceiptButton = document.getElementById("close-receipt");
 closeReceiptButton.addEventListener("click", closeReceipt);
 
 const payButton = document.getElementById("pay-button");
-payButton.addEventListener("click", payOpen);
+payButton.addEventListener("click", () => {
+    payOpen(cartList)
+});
 
 const closeModalButton = document.getElementById("close-button");
 closeModalButton.addEventListener("click", payClose);

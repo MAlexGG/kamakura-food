@@ -192,6 +192,11 @@ h2 {
     color: white;
 }
 
+.receipt-error {
+    display: none;
+    color: var(--color-main);
+}
+
 
 /* Modal */
 

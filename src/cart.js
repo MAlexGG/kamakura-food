@@ -68,6 +68,8 @@ function closeReceipt(){
     receipt.style.display = "none";
     const cart = document.getElementById("products-container");
     cart.style.display = "flex";
+    const error = document.getElementById('receipt-error');
+        error.style.display = "none";
 }
 
 function getReceipt(){
@@ -118,4 +120,4 @@ function cleanOrder(){
     printCart(cartList);
 }
 
-export {toggleCart, deleteCartProduct, addProduct, getProduct, printCart, getReceipt, closeReceipt, addQuantity, substractQuantity, getTotal, printTotal, cleanOrder}
+export {toggleCart, deleteCartProduct, addProduct, getProduct, printCart, getReceipt, closeReceipt, addQuantity, substractQuantity, getTotal, printTotal, cleanOrder, cartList}

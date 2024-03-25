@@ -16,15 +16,18 @@ function printReceipt(order){
     } else {
         render = `<h3>Aún no has escogido tu orden</h3>`; 
     }
-
     receiptContainer.innerHTML = render;
-    
-}
+};
 
-function payOpen(){
-    const modal = document.getElementById("modal-container");
-    modal.style.display = "flex";
-}
+function payOpen(order){
+    if(order.length >= 1){
+        const modal = document.getElementById("modal-container");
+        modal.style.display = "flex";
+    } else {
+        const error = document.getElementById('receipt-error');
+        error.style.display = "flex";
+    }   
+};
 
 function payClose(){
     const modal = document.getElementById("modal-container");
