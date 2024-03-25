@@ -57,10 +57,10 @@ function closeProducts(){
     cart.style.display = "none";
 }
 
-function openReceipt(){
+function openReceipt(order){
     const cart = document.getElementById("receipt-container");
     cart.style.display = "flex";
-    printReceipt(cartList);
+    printReceipt(order);
 }
 
 function closeReceipt(){
@@ -72,10 +72,10 @@ function closeReceipt(){
         error.style.display = "none";
 }
 
-function getReceipt(){
+function getReceipt(order){
     closeProducts();
-    openReceipt();
-    printTotal(cartList, "receipt-total");
+    openReceipt(order);
+    printTotal(order, "receipt-total");
 }
 
 function addQuantity(id){  
@@ -117,7 +117,6 @@ function cleanOrder(){
     cartList = [];
     const totalContainer = document.getElementById("cart-total");
     totalContainer.innerText = "Total 0.00 €";
-    printCart(cartList);
 }
 
 export {toggleCart, deleteCartProduct, addProduct, getProduct, printCart, getReceipt, closeReceipt, addQuantity, substractQuantity, getTotal, printTotal, cleanOrder, cartList}

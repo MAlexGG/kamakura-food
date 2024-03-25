@@ -32,8 +32,8 @@ function payOpen(order){
 function payClose(){
     const modal = document.getElementById("modal-container");
     modal.style.display = "none";
-    closeReceipt();
     cleanOrder();
+    closeReceipt();
     toggleCart();
 }
 
