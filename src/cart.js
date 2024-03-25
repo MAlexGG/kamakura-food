@@ -111,15 +111,11 @@ function printTotal(order, elementId){
     totalContainer.innerText = `Total ${total.toFixed(2)} €`;
 }
 
-function emptyCart(){
-    cartList = [];
-}
-
 function cleanOrder(){
-    const orderProducts = document.getElementById("cart-products");
-    orderProducts.style.display = "none";
+    cartList = [];
     const totalContainer = document.getElementById("cart-total");
     totalContainer.innerText = "Total 0.00 €";
+    printCart(cartList);
 }
 
-export {toggleCart, deleteCartProduct, addProduct, getProduct, printCart, getReceipt, closeReceipt, addQuantity, substractQuantity, getTotal, printTotal, emptyCart, cleanOrder}
+export {toggleCart, deleteCartProduct, addProduct, getProduct, printCart, getReceipt, closeReceipt, addQuantity, substractQuantity, getTotal, printTotal, cleanOrder}

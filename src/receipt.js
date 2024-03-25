@@ -1,4 +1,4 @@
-import { cleanOrder, closeReceipt, emptyCart, toggleCart } from "./cart.js";
+import { cleanOrder, closeReceipt, toggleCart } from "./cart.js";
 
 function printReceipt(order){
     let render = '';
@@ -32,7 +32,6 @@ function payClose(){
     closeReceipt();
     cleanOrder();
     toggleCart();
-    emptyCart();
 }
 
 export { printReceipt, payOpen, payClose };
